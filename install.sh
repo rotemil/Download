@@ -25,3 +25,7 @@ EOF
 else
     npm install -g npm --unsafe-perm=true --allow-root
 fi
+cd /adminMongo
+install npm
+sudo sed -i 's/localhost/0.0.0.0/g' /home/ec2-user/adminmongo/app.js
+
