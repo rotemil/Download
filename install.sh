@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 # update installed packages 
+sudo -u ec2-user bash
 sudo yum update -y 
 sudo yum install git -y
 export HOME=/root
